@@ -7,8 +7,8 @@ class Splitr < Formula
   head "https://github.com/tasticolly/splitr.git", branch: "main"
 
   depends_on "go" => :build
-  depends_on "sshuttle"
   depends_on :macos
+  depends_on "sshuttle"
 
   def install
     ldflags = "-s -w -X github.com/tasticolly/splitr/internal/daemon.Version=v#{version}"
@@ -40,6 +40,6 @@ class Splitr < Formula
 
   test do
     assert_match "v#{version}", shell_output("#{bin}/splitr version")
-    assert_match "protection", shell_output("#{bin}/splitr --help 2>&1", 0)
+    assert_match "protection", shell_output("#{bin}/splitr --help 2>&1")
   end
 end
