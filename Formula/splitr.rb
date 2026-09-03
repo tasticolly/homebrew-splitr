@@ -1,8 +1,8 @@
 class Splitr < Formula
   desc "Sshuttle tunnel manager for macOS with a pf-based kill switch"
   homepage "https://github.com/tasticolly/splitr"
-  url "https://github.com/tasticolly/splitr/archive/refs/tags/v0.5.1.tar.gz"
-  sha256 "5922e7e9fec1025f5cb163b38bfec9f6ebc07d92adc4b47ce3360134a25848f2"
+  url "https://github.com/tasticolly/splitr/archive/refs/tags/v0.5.2.tar.gz"
+  sha256 "b947509c943b91135969d55c106ac2f5b42cea166d2dbb2f744fb718ed809ff3"
   license "MIT"
   head "https://github.com/tasticolly/splitr.git", branch: "main"
 
